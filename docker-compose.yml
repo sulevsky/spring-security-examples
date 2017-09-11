@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  dataprovider:
+    image: dataprovider:0.0.1-SNAPSHOT
+    ports:
+      - "8081:8081"
+  dataconsumer:
+    image: dataconsumer:0.0.1-SNAPSHOT
+    ports:
+      - "8080:8080"
+    environment:
+        DATAPROVIDER_URL: http://dataprovider:8081

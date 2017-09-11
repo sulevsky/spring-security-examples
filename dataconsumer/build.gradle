@@ -41,9 +41,10 @@ dependencyManagement {
     }
 }
 
-//task buildDocker(type: Docker, dependsOn: build) {
-//    applicationName = jar.baseName
-//    dockerfile = file('src/main/docker/Dockerfile')
-//    tagVersion = version
-//    tag = "latest"
-//}
+task buildDocker(type: Docker, dependsOn: build) {
+    applicationName = jar.baseName
+    dockerfile = file('src/main/docker/Dockerfile')
+    tagVersion = version
+    ext.dockerImageBase = "${applicationName}"
+    tag = dockerImageBase
+}

@@ -1,6 +1,5 @@
 package com.sulevsky.dataconsumer;
 
-
 public class AggregatedMessage {
     private String id;
     private String providersContent;

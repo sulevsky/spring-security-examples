@@ -46,5 +46,6 @@ task buildDocker(type: Docker, dependsOn: build) {
     applicationName = jar.baseName
     dockerfile = file('src/main/docker/Dockerfile')
     tagVersion = version
-    tag = "latest"
+    ext.dockerImageBase = "${applicationName}"
+    tag = dockerImageBase
 }

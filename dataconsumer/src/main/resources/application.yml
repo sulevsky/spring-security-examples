@@ -1,6 +1,6 @@
-dataProvider.url: http://localhost:8081
 dataconsumer.own-message: "This is data consumer's own message"
+dataprovider.url: http://localhost:8081
 
 ---
 spring.profiles: test
-dataProvider.url: http://localhost:10177
+dataprovider.url: http://localhost:10177
