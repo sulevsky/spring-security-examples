@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+   dataprovider:
+    image: dataprovider
+    ports:
+      - "8080:8080"

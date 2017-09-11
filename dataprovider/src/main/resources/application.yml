@@ -1,0 +1,4 @@
+server:
+  port: 8081
+
+default-message: "Hello, this is default message from data provider"
